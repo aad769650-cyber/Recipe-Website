@@ -1,0 +1,32 @@
+ [
+    {
+    "id": 1,
+    "question": "How do I submit my own recipe?",
+    "answer":
+      "You can submit your recipe by going to the 'Add Recipe' section in the app. Fill in the required details like ingredients, steps, cook time, and upload a photo. Once reviewed, your recipe will be published."
+  },
+  {
+    "id": 2,
+    "question": "Are the recipes free to access?",
+    "answer":
+      "Yes! All recipes in our app are free to browse, save, and share. Some premium features (like meal planning or ad-free experience) may require a subscription."
+  },
+  {
+    "id": 3,
+    "question": "Can I save recipes to view offline?",
+    "answer":
+      "Absolutely. Just tap the Save icon on any recipe, and it will be available in your 'Saved Recipes' even without internet access."
+  },
+  {
+    "id": 4,
+    "question": "How do I filter recipes by dietary preferences?",
+    "answer":
+      "Use the filter option on the home or search page to narrow recipes by dietary needs like vegetarian, vegan, gluten-free, keto, or low-carb."
+  },
+  {
+    "id": 5,
+    "question": "Is there a shopping list feature?",
+    "answer":
+      "Yes! When viewing any recipe, you can tap 'Add to Shopping List' and it will auto-generate a list of ingredients you need to buy."
+  }
+]

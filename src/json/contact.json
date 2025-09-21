@@ -1,0 +1,18 @@
+[
+    {
+        "find":"Find Us",
+        "Contact":"Sahiwal,Sargodha",
+        "icon":"CiLocationOn"
+
+    },   {
+        "find":"Contact Us",
+        "Contact":"03281700284",
+        "icon":"RiContactsFill"
+
+    },   {
+        "find":"Mail Us",
+        "Contact":"mahar@gmail.com",
+        "icon":"MdOutlineMail"
+
+    }
+]
