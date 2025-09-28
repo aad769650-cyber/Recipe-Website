@@ -20,7 +20,7 @@ Your Ultimate Destination for Delicious, Easy-to-Follow Recipes!
 
 
 <div className="home-image">
-<img src="home-image.avif" alt="REcipe image for home" />
+<img src="home-image.avif" alt="Recipe image for home" />
 </div>
 
 </section>

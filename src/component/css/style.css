@@ -671,6 +671,17 @@ background: rgb(168, 161, 161);
   /* background: chartreuse; */
   height: 100%;
   padding: 1rem;
+  .input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  & input{
+    padding: 1rem;
+    width: 35rem;
+
+  }
 }
 .grid-recipe{
   /* background: #000; */

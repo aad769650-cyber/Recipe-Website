@@ -38,7 +38,7 @@ touched
 
 
 
-// console.log(errors,touched);
+console.log(errors,touched);
 
 
 

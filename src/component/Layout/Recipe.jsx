@@ -1,9 +1,13 @@
 import { useQuery } from "@tanstack/react-query"
 import { apiData } from "../../api/apiData";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 export const Recipe=()=>{
-   const getApiData=async () => {
+const [input,setInput]=useState("")
+
+
+    const getApiData=async () => {
     const res=await apiData();
     // console.log(res);
     return res;
@@ -15,12 +19,20 @@ export const Recipe=()=>{
    })
    
    
-//  console.log(data);
- 
+// //  console.log(data?.data?.meals.strMeal.toLowerCase().includes("a"));
+//  const arr = ["HELLO", "WORLD", "ReAcT", "JavaScript"];
+
+// const lowercasedArr = arr.filter(item => item.toLowerCase().includes("a"));
+
+// console.log(lowercasedArr);
    
    
+  const filtered= data?.data?.meals.filter((curr)=>{
+    //   console.log(curr.strMeal.toLowerCase().includes("a"))
+    return(curr.strMeal.toLowerCase().includes(input.toLowerCase()))
+   });
    
-   
+   console.log(filtered);
    
    
    if(isLoading){
@@ -46,6 +58,7 @@ export const Recipe=()=>{
    
    
    
+   console.log(input);
    
    
    
@@ -56,9 +69,12 @@ export const Recipe=()=>{
     
     
     <section className="recipe">
-        <ul className="grid-recipe">
+
+      <div className="input">  <input type="text" value={input} onChange={(e)=>setInput(e.target.value)} placeholder="Search Recipe..."/></div> 
+      
+       <ul className="grid-recipe">
     {
-        data?.data?.meals.map((curr)=>{
+        filtered?.map((curr)=>{
  
    const {strMeal,strMealThumb,idMeal}=curr;
             return(
